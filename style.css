@@ -1,0 +1,27 @@
+main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.header {
+   display: flex;
+   align-items: center;
+   font-size: xx-small;
+   gap: 15px;
+}
+
+.drum {
+   display: flex;
+   gap: 50px;
+}
+.buttons-container {
+   display: grid;
+   grid-template-columns: repeat(4, 100px);
+   gap: 20px;
+}
+.buttons-container button {
+   width: 100px;
+   height: 100px;
+}
+
