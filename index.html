@@ -7,6 +7,8 @@
    <link rel="icon" type="image/x-icon" href="logo.png"> 
 
    <link rel="stylesheet" href="style.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 </head>
 <body>
    <main>
@@ -16,14 +18,14 @@
       </div>
       <div class="drum">
         <section class="buttons-container">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button data-sound="kick">kick</button>
+          <button data-sound="snare">snare</button>
+          <button data-sound="snare-drum">snare-drum</button>
+          <button data-sound="hit-hat">hit-hat</button>
+          <button data-sound="conga">conga</button>
+          <button data-sound="pop">pop</button>
+          <button data-sound="kick"></button>
+          <button data-sound="kick"></button>
         </section>
    
          <section class="control-container">
@@ -31,10 +33,19 @@
                <span>Power</span>
                <input type="checkbox">
             </label>
-            <input type="range" id="" min="0" max="100">
+            <div>
+               <label class="recent-key">
+                  <input type="submit" id="volume" value="Input Key" disabled>
+               </label>
+               <label>
+                  <input type="range" id="" min="0" max="100" value="Volume">
+               </label>
+            </div>
+           
          </section>
       </div>
-     
    </main>
+
+   <script src="sound.js"></script>
 </body>
 </html>

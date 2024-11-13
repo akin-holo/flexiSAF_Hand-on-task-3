@@ -1,8 +1,14 @@
-main {
+body {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-color: #023047;
+}
+
+main {
+  margin: 2rem;
+  background-color: #003d5b17;
 }
 .header {
    display: flex;
@@ -21,7 +27,15 @@ main {
    gap: 20px;
 }
 .buttons-container button {
+   color: #fff;
    width: 100px;
    height: 100px;
+   background-color: #EDAE49;
+   border-radius: 50%;
+   border: none;
+   box-shadow: 2px 2px 10px 2px #0000004f;
+}
+button:active {
+   background-color: #edae4963;
 }
 
