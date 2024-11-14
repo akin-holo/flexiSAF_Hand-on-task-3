@@ -1,11 +1,14 @@
 // Sounds
 const sounds = {
-   'kick': new Howl({ src: ['sounds/clean-kick.wav'] }),
-   'snare': new Howl({ src: ['sounds/rack-kick.wav'] }),
-   'snare-drum': new Howl({ src: ['sounds/snare-drum.wav'] }),
-   'conga': new Howl({ src: ['sounds/conga.wav'] }),
-   'pop': new Howl({ src: ['sounds/pop.wav'] }),
-   'hi-hat': new Howl({ src: ['path/to/hi-hat.mp3'] })
+   'kick': new Howl({ src: ['sound/clean-kick.wav'] }),
+   'snare': new Howl({ src: ['sound/rack-kick.wav'] }),
+   'snare-drum': new Howl({ src: ['sound/snare-drum.wav'] }),
+   'bass-hit': new Howl({ src: ['sound/bass-hit.wav'] }),
+   'conga': new Howl({ src: ['sound/conga.wav'] }),
+   'pop': new Howl({ src: ['sound/pop.wav'] }),
+   'hi-hat': new Howl({ src: ['path/to/hi-hat.mp3'] }),
+   'bell-ding': new Howl({ src: ['sound/bell-ding.wav'] }),
+   'mixkit': new Howl({ src: ['sound/mixkit.wav'] }),
 
  };
  
