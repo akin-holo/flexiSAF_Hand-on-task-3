@@ -5,7 +5,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Drum Machine | By Akin Holo</title>
    <link rel="icon" type="image/x-icon" href="logo.png"> 
-
    <link rel="stylesheet" href="style.css">
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
@@ -13,9 +12,25 @@
 <body>
    <main>
       <div class="header">
-         <h1>Drum Machine by Akin Holo</h1>
          <img src="logo.png" width="70" height="25">
+         <h1>Drum Machine by Akin Holo</h1>
       </div>
+
+      <section class="control-container">
+         <label for="power">
+            <span>Power</span>
+            <button id="power">On</button>
+         </label>
+         <div>
+            <label class="recent-key">
+               <input type="submit" id="volume" value="Input Key" disabled>
+            </label>
+            <label>
+               <input type="range" id="" min="0" max="100" value="Volume">
+            </label>
+         </div>
+      </section>
+
       <div class="drum">
         <section class="buttons-container">
           <button data-sound="kick">kick</button>
@@ -27,22 +42,6 @@
           <button data-sound="bell-ding" style="background-color: #8ECAE6;">Bell-ding</button>
           <button data-sound="mixkit">mixkit</button>
         </section>
-   
-         <section class="control-container">
-            <label>
-               <span>Power</span>
-               <input type="checkbox">
-            </label>
-            <div>
-               <label class="recent-key">
-                  <input type="submit" id="volume" value="Input Key" disabled>
-               </label>
-               <label>
-                  <input type="range" id="" min="0" max="100" value="Volume">
-               </label>
-            </div>
-           
-         </section>
       </div>
    </main>
 

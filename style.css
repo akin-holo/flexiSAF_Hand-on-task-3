@@ -3,15 +3,27 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   /* background-color: #023047; */
 }
 
 main {
    width: 800px; 
-   height: 400px;
    margin: 2rem;
    background-color: #003d5b;
    border-radius: 5px;
+
+
+   @media screen and (max-width: 900px) {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      height: 90vh;
+   }
+
+   @media screen and (max-width: 359px) {
+      width: 300px;
+      padding: 20px 0;
+   }
 }
 .header {
    display: flex;
@@ -19,18 +31,38 @@ main {
    margin: 2rem;
    font-size: xx-small;
    gap: 15px;
+
+
+   @media screen and (max-width: 359px) {
+      margin: 0 10px;
+      font-size: 0.5rem;
+   }  
 }
 
 .drum {
    display: flex;
    margin: 2rem;
    gap: 50px;
+
+
+   @media screen and (max-width: 699px) {
+      flex-direction: column;
+      margin: 0 10px;
+   }
 }
+
+
 
 .buttons-container {
    display: grid;
    grid-template-columns: repeat(4, 100px);
    gap: 20px;
+
+   @media screen and (max-width: 699px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+   }
 }
 
 .buttons-container button {
@@ -41,6 +73,11 @@ main {
    border: none;
    outline: 1px solid #000;
    box-shadow: 2px 2px 10px 2px #0000004f;
+
+   @media screen and (max-width: 359px) {
+      width: 80px;
+      height: 80px;
+   }
 }
 [data-sound="kick"] {
    background-color: #8ECAE6;
